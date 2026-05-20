@@ -1,0 +1,10 @@
+{
+  "version": "v2",
+  "timestamp": "20260519_225219",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "max_tokens": 800,
+  "total_cases": 20,
+  "total_responses": 120,
+  "result_file": "results/experiment_v2_results_FINAL_20260519_225219.csv"
+}

@@ -1,0 +1,8 @@
+.env
+*.env
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+.venv/
+experiment_v4_temp.csv
