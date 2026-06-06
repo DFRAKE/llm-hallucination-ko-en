@@ -6,3 +6,5 @@ __pycache__/
 venv/
 .venv/
 experiment_v4_temp.csv
+*_checkpoint.csv
+test_gpt.py
