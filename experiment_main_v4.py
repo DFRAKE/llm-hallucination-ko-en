@@ -91,14 +91,6 @@ def main():
     print(f"\n최종 저장: {final_path}")
     print(f"총 수집 행 수: {len(df_final)}")
 
-    # 기존 데이터와 합산
-    combined_path = RESULTS_DIR / "experiment_COMBINED.csv"
-    if combined_path.exists():
-        existing = pd.read_csv(combined_path)
-        combined = pd.concat([existing, df_final], ignore_index=True)
-        combined = combined.drop_duplicates(subset=["case_id", "language", "turn"])
-        combined.to_csv(RESULTS_DIR / "experiment_FINAL_600.csv", index=False, encoding="utf-8-sig")
-        print(f"기존: {len(existing)}행 | 신규: {len(df_final)}행 | 합산: {len(combined)}행")
 
 if __name__ == "__main__":
     main()
